@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["./"]
+
+[project]
+name = "feed2json"
+version = "2024.4.29"
+authors = [
+  { name="Versun", email="feed2json@versun.me" },
+]
+description = "Convert RSS feed to JSON Feed"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT License"}
+classifiers = [
+    "Environment :: Web Environment",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "feedparser>=6.0.11",
+]
+
+[project.urls]
+Homepage = "https://github.com/versun/feed2json"
+Repository = "https://github.com/versun/feed2json.git"
+Issues = "https://github.com/versun/feed2json/issues"
